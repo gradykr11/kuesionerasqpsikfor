@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuesioner Autism Spectrum Quotient (ASQ) Psikfor ID</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <h1>Kuesioner Autism Spectrum Quotient (ASQ) Psikfor ID</h1>
+    <form id="asq-form">
+        <!-- Name input field -->
+        <label for="name">Nama Anda:</label><br>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required><br><br>
+
+        <!-- Gender Selection -->
+        <label for="gender">Pilih Jenis Kelamin:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Laki-laki</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Perempuan</label><br><br>
+
+        <!-- Question 1 -->
+        <label for="question1">1. Saya lebih suka melakukan sesuatu bersama orang lain daripada sendirian.</label><br>
+        <input type="radio" id="q1sd" name="1" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q1ts" name="1" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q1s" name="1" value="Setuju" required> Setuju
+        <input type="radio" id="q1sts" name="1" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 2 -->
+        <label for="question2">2. Saya lebih suka melakukan sesuatu dengan cara yang sama berulang-ulang.</label><br>
+        <input type="radio" id="q2sd" name="2" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q2ts" name="2" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q2s" name="2" value="Setuju" required> Setuju
+        <input type="radio" id="q2sts" name="2" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 3 -->
+        <label for="question3">3. Jika saya mencoba membayangkan sesuatu, saya sangat mudah menciptakan gambar di pikiran saya.</label><br>
+        <input type="radio" id="q3sd" name="3" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q3ts" name="3" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q3s" name="3" value="Setuju" required> Setuju
+        <input type="radio" id="q3sts" name="3" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 4 -->
+        <label for="question4">4. Saya sering begitu larut dalam satu hal sehingga mengabaikan hal-hal lain.</label><br>
+        <input type="radio" id="q4sd" name="4" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q4ts" name="4" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q4s" name="4" value="Setuju" required> Setuju
+        <input type="radio" id="q4sts" name="4" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 5 -->
+        <label for="question5">5. Saya sering memperhatikan suara-suara kecil yang orang lain tidak perhatikan.</label><br>
+        <input type="radio" id="q5sd" name="5" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q5ts" name="5" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q5s" name="5" value="Setuju" required> Setuju
+        <input type="radio" id="q5sts" name="5" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 6 -->
+        <label for="question6">6. Saya biasanya memperhatikan plat nomor mobil atau rangkaian informasi sejenis.</label><br>
+        <input type="radio" id="q6sd" name="6" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q6ts" name="6" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q6s" name="6" value="Setuju" required> Setuju
+        <input type="radio" id="q6sts" name="6" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 7 -->
+        <label for="question7">7. Orang lain sering mengatakan bahwa apa yang saya katakan tidak sopan, meskipun menurut saya itu sopan.</label><br>
+        <input type="radio" id="q7sd" name="7" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q7ts" name="7" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q7s" name="7" value="Setuju" required> Setuju
+        <input type="radio" id="q7sts" name="7" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 8 -->
+        <label for="question8">8. Ketika saya membaca cerita, saya bisa dengan mudah membayangkan bagaimana rupa para karakter.</label><br>
+        <input type="radio" id="q8sd" name="8" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q8ts" name="8" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q8s" name="8" value="Setuju" required> Setuju
+        <input type="radio" id="q8sts" name="8" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 9 -->
+        <label for="question9">9. Saya tertarik dengan tanggal-tanggal.</label><br>
+        <input type="radio" id="q9sd" name="9" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q9ts" name="9" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q9s" name="9" value="Setuju" required> Setuju
+        <input type="radio" id="q9sts" name="9" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 10 -->
+        <label for="question10">10. Dalam sebuah kelompok sosial, saya bisa dengan mudah mengikuti percakapan beberapa orang yang berbeda.</label><br>
+        <input type="radio" id="q10sd" name="10" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q10ts" name="10" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q10s" name="10" value="Setuju" required> Setuju
+        <input type="radio" id="q10sts" name="10" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 11 -->
+        <label for="question11">11. Saya merasa situasi sosial itu mudah.</label><br>
+        <input type="radio" id="q11sd" name="11" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q11ts" name="11" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q11s" name="11" value="Setuju" required> Setuju
+        <input type="radio" id="q11sts" name="11" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 12 -->
+        <label for="question12">12. Saya cenderung memperhatikan detail yang tidak diperhatikan orang lain.</label><br>
+        <input type="radio" id="q12sd" name="12" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q12ts" name="12" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q12s" name="12" value="Setuju" required> Setuju
+        <input type="radio" id="q12sts" name="12" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 13 -->
+        <label for="question13">13. Saya lebih suka pergi ke perpustakaan daripada pesta.</label><br>
+        <input type="radio" id="q13sd" name="13" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q13ts" name="13" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q13s" name="13" value="Setuju" required> Setuju
+        <input type="radio" id="q13sts" name="13" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 14 -->
+        <label for="question14">14. Saya merasa mudah menciptakan cerita.</label><br>
+        <input type="radio" id="q14sd" name="14" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q14ts" name="14" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q14s" name="14" value="Setuju" required> Setuju
+        <input type="radio" id="q14sts" name="14" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 15 -->
+        <label for="question15">15. Saya lebih tertarik pada orang daripada benda.</label><br>
+        <input type="radio" id="q15sd" name="15" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q15ts" name="15" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q15s" name="15" value="Setuju" required> Setuju
+        <input type="radio" id="q15sts" name="15" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 16 -->
+        <label for="question16">16. Saya cenderung memiliki minat yang sangat kuat, yang membuat saya kesal jika tidak bisa saya jalani.</label><br>
+        <input type="radio" id="q16sd" name="16" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q16ts" name="16" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q16s" name="16" value="Setuju" required> Setuju
+        <input type="radio" id="q16sts" name="16" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 17 -->
+        <label for="question17">17. Saya menikmati obrolan ringan.</label><br>
+        <input type="radio" id="q17sd" name="17" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q17ts" name="17" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q17s" name="17" value="Setuju" required> Setuju
+        <input type="radio" id="q17sts" name="17" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 18 -->
+        <label for="question18">18. Ketika saya berbicara, orang lain sulit untuk menyela pembicaraan saya.</label><br>
+        <input type="radio" id="q18sd" name="18" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q18ts" name="18" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q18s" name="18" value="Setuju" required> Setuju
+        <input type="radio" id="q18sts" name="18" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 19 -->
+        <label for="question19">19. Saya tertarik pada angka-angka</label><br>
+        <input type="radio" id="q19sd" name="19" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q19ts" name="19" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q19s" name="19" value="Setuju" required> Setuju
+        <input type="radio" id="q19sts" name="19" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 20 -->
+        <label for="question20">20. Ketika saya membaca cerita, saya sulit memahami tujuan karakter-karakternya.</label><br>
+        <input type="radio" id="q20sd" name="20" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q20ts" name="20" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q20s" name="20" value="Setuju" required> Setuju
+        <input type="radio" id="q20sts" name="20" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 21 -->
+        <label for="question21">21. Saya tidak terlalu menikmati membaca fiksi.</label><br>  
+        <input type="radio" id="q21sd" name="21" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q21ts" name="21" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q21s" name="21" value="Setuju" required> Setuju
+        <input type="radio" id="q21sts" name="21" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 22 -->
+        <label for="question22">22. Saya merasa sulit membuat teman baru.</label><br>
+        <input type="radio" id="q22sd" name="22" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q22ts" name="22" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q22s" name="22" value="Setuju" required> Setuju
+        <input type="radio" id="q22sts" name="22" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 23 -->
+        <label for="question23">23. Saya selalu memperhatikan pola dalam segala hal.</label><br>
+        <input type="radio" id="q23sd" name="23" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q23ts" name="23" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q23s" name="23" value="Setuju" required> Setuju
+        <input type="radio" id="q23sts" name="23" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 24 -->
+        <label for="question24">24. Saya lebih suka pergi ke teater daripada museum.</label><br>
+        <input type="radio" id="q24sd" name="24" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q24ts" name="24" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q24s" name="24" value="Setuju" required> Setuju
+        <input type="radio" id="q24sts" name="24" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 25 -->
+        <label for="question25">25. Saya tidak terganggu jika rutinitas harian saya terganggu.</label><br>
+        <input type="radio" id="q25sd" name="25" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q25ts" name="25" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q25s" name="25" value="Setuju" required> Setuju
+        <input type="radio" id="q25sts" name="25" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 26 -->
+        <label for="question26">26. Saya sering merasa tidak tahu bagaimana cara melanjutkan percakapan.</label><br>
+        <input type="radio" id="q26sd" name="26" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q26ts" name="26" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q26s" name="26" value="Setuju" required> Setuju
+        <input type="radio" id="q26sts" name="26" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 27 -->
+        <label for="question27">27. Saya mudah memahami maksud yang tersirat dari pembicaraan orang lain.</label><br>
+        <input type="radio" id="q27sd" name="27" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q27ts" name="27" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q27s" name="27" value="Setuju" required> Setuju
+        <input type="radio" id="q27sts" name="27" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <!-- Question 28 -->
+        <label for="question28">28. Saya biasanya lebih berkonsentrasi pada gambaran keseluruhan, daripada detail kecil.</label><br>
+        <input type="radio" id="q28sd" name="28" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q28ts" name="28" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q28s" name="28" value="Setuju" required> Setuju
+        <input type="radio" id="q28sts" name="28" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+        
+        <!-- Question 29 -->
+        <label for="question29">29. Saya tidak terlalu pandai mengingat nomor telepon.</label><br>
+        <input type="radio" id="q29sd" name="29" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q29ts" name="29" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q29s" name="29" value="Setuju" required> Setuju
+        <input type="radio" id="q29sts" name="29" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 30 -->
+        <label for="question30">30. Saya biasanya tidak memperhatikan perubahan kecil dalam situasi atau penampilan seseorang.</label><br>
+        <input type="radio" id="q30sd" name="30" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q30ts" name="30" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q30s" name="30" value="Setuju" required> Setuju
+        <input type="radio" id="q30sts" name="30" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 31 -->
+        <label for="question31">31. Saya tahu cara mengetahui jika seseorang yang mendengarkan saya mulai bosan.</label><br>
+        <input type="radio" id="q31sd" name="31" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q31ts" name="31" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q31s" name="31" value="Setuju" required> Setuju
+        <input type="radio" id="q31sts" name="31" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 32 -->
+        <label for="question32">32. Saya merasa mudah melakukan lebih dari satu hal sekaligus.</label><br>
+        <input type="radio" id="q32sd" name="32" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q32ts" name="32" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q32s" name="32" value="Setuju" required> Setuju
+        <input type="radio" id="q32sts" name="32" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 33 -->
+        <label for="question33">33. Ketika saya berbicara di telepon, saya tidak yakin kapan giliran saya berbicara.</label><br>
+        <input type="radio" id="q33sd" name="33" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q33ts" name="33" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q33s" name="33" value="Setuju" required> Setuju
+        <input type="radio" id="q33sts" name="33" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 34 -->
+        <label for="question34">34. Saya menikmati melakukan hal-hal secara spontan.</label><br>
+        <input type="radio" id="q34sd" name="34" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q34ts" name="34" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q34s" name="34" value="Setuju" required> Setuju
+        <input type="radio" id="q34sts" name="34" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 35 -->
+        <label for="question35">35. Saya sering menjadi yang terakhir memahami maksud dari sebuah lelucon.</label><br>
+        <input type="radio" id="q35sd" name="35" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q35ts" name="35" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q35s" name="35" value="Setuju" required> Setuju
+        <input type="radio" id="q35sts" name="35" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 36 -->
+        <label for="question36">36. Saya merasa mudah untuk mengetahui apa yang seseorang pikirkan atau rasakan hanya dengan melihat wajah mereka.</label><br>
+        <input type="radio" id="q36sd" name="36" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q36ts" name="36" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q36s" name="36" value="Setuju" required> Setuju
+        <input type="radio" id="q36sts" name="36" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 37 -->
+        <label for="question37">37. Jika ada gangguan, saya bisa kembali ke apa yang saya lakukan dengan cepat.</label><br>
+        <input type="radio" id="q37sd" name="37" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q37ts" name="37" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q37s" name="37" value="Setuju" required> Setuju
+        <input type="radio" id="q37sts" name="37" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 38 -->
+        <label for="question38">38. Saya pandai berbincang-bincang ringan.</label><br>
+        <input type="radio" id="q38sd" name="38" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q38ts" name="38" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q38s" name="38" value="Setuju" required> Setuju
+        <input type="radio" id="q38sts" name="38" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 39 -->
+        <label for="question39">39. Orang sering mengatakan bahwa saya terus-menerus membicarakan hal yang sama.</label><br>
+        <input type="radio" id="q39sd" name="39" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q39ts" name="39" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q39s" name="39" value="Setuju" required> Setuju
+        <input type="radio" id="q39sts" name="39" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 40 -->
+        <label for="question40">40. Ketika masih kecil, saya suka bermain peran bersama anak-anak lain.</label><br>
+        <input type="radio" id="q40sd" name="40" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q40ts" name="40" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q40s" name="40" value="Setuju" required> Setuju
+        <input type="radio" id="q40sts" name="40" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 41 -->
+        <label for="question41">41. Saya suka mengumpulkan informasi tentang kategori benda (misalnya, jenis mobil, jenis burung, jenis kereta, jenis tumbuhan, dll.).</label><br>
+        <input type="radio" id="q41sd" name="41" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q41ts" name="41" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q41s" name="41" value="Setuju" required> Setuju
+        <input type="radio" id="q41sts" name="41" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 42 -->
+        <label for="question42">42. Saya merasa sulit membayangkan bagaimana rasanya menjadi orang lain.</label><br>
+        <input type="radio" id="q42sd" name="42" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q42ts" name="42" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q42s" name="42" value="Setuju" required> Setuju
+        <input type="radio" id="q42sts" name="42" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 43 -->
+        <label for="question43">43. Saya suka merencanakan setiap kegiatan yang saya ikuti dengan hati-hati.</label><br>
+        <input type="radio" id="q43sd" name="43" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q43ts" name="43" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q43s" name="43" value="Setuju" required> Setuju
+        <input type="radio" id="q43sts" name="43" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 44 -->
+        <label for="question44">44. Saya menikmati acara sosial.</label><br>
+        <input type="radio" id="q44sd" name="44" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q44ts" name="44" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q44s" name="44" value="Setuju" required> Setuju
+        <input type="radio" id="q44sts" name="44" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 45 -->
+        <label for="question45">45. Saya merasa sulit memahami tujuan orang lain.</label><br>
+        <input type="radio" id="q45sd" name="45" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q45ts" name="45" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q45s" name="45" value="Setuju" required> Setuju
+        <input type="radio" id="q45sts" name="45" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 46 -->
+        <label for="question46">46. Situasi baru membuat saya cemas.</label><br>
+        <input type="radio" id="q46sd" name="46" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q46ts" name="46" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q46s" name="46" value="Setuju" required> Setuju
+        <input type="radio" id="q46sts" name="46" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 47 -->
+        <label for="question47">47. Saya senang bertemu orang baru.</label><br>
+        <input type="radio" id="q47sd" name="47" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q47ts" name="47" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q47s" name="47" value="Setuju" required> Setuju
+        <input type="radio" id="q47sts" name="47" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 48 -->
+        <label for="question48">48. Saya adalah seorang diplomat yang baik.</label><br>
+        <input type="radio" id="q48sd" name="48" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q48ts" name="48" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q48s" name="48" value="Setuju" required> Setuju
+        <input type="radio" id="q48sts" name="48" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 49 -->
+        <label for="question49">49. Saya tidak pandai mengingat tanggal lahir orang.</label><br>
+        <input type="radio" id="q49sd" name="49" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q49ts" name="49" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q49s" name="49" value="Setuju" required> Setuju
+        <input type="radio" id="q49sts" name="49" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+ 
+        <!-- Question 50 -->
+        <label for="question50">50. Saya merasa sangat mudah bermain permainan dengan anak-anak yang melibatkan peran.</label><br>
+        <input type="radio" id="q50sd" name="50" value="Sangat tidak setuju" required> Sangat tidak setuju
+        <input type="radio" id="q50ts" name="50" value="Tidak setuju" required> Tidak setuju
+        <input type="radio" id="q50s" name="50" value="Setuju" required> Setuju
+        <input type="radio" id="q50sts" name="50" value="Sangat setuju" required> Sangat setuju
+        <br><br>
+
+        <input type="submit" value="Kirim">
+    </form>
+    <div id="result"></div>
+    <footer>
+        <p>Laman Web ini dikoding oleh Grady Kr</p>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
